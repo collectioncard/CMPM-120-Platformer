@@ -116,7 +116,7 @@ class Platformer extends Phaser.Scene {
             frame: ['dirt_02.png'],
 
             random: true,
-            scale: {start: 0.03, end: .5},
+            scale: {start: 0.03, end: .2},
             maxAliveParticles: 20,
             lifespan: 350,
             alpha: {start: 1, end: 0.1},
@@ -259,7 +259,7 @@ class Platformer extends Phaser.Scene {
         if (my.sprite.player.body.blocked.down && Phaser.Input.Keyboard.JustDown(cursors.up)) {
             my.sprite.player.body.setVelocityY(this.JUMP_VELOCITY);
             this.sound.play('jumpAudio');
-            my.vfx.jump.startFollow(my.sprite.player, my.sprite.player.displayWidth / 2, my.sprite.player.displayHeight / 2, false);
+            my.vfx.jump.startFollow(my.sprite.player, this.getPlayerFootPos(my.sprite.player).x, this.getPlayerFootPos(my.sprite.player).y, false);
             my.vfx.jump.emitParticle(10);
         }else if(my.sprite.player.body.blocked.up && Phaser.Input.Keyboard.JustDown(cursors.up)){
             my.sprite.player.body.setVelocityY(-this.JUMP_VELOCITY);
