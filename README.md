@@ -1,7 +1,12 @@
 
 **GravFlux**
 
-A simple platform prototype with a fun gravity mechanic.
+A simple platform prototype with a fun gravity mechanic. You can [check out a playable version of this game on my itch.io page](https://collectioncard.itch.io/gravflux)!
+
+
+
+This game was made for CMPM 120 at UCSC during Spring quarter 2024 and will most likely not recieve any further updates.
+
 
 
 
